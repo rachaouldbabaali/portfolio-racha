@@ -8,7 +8,18 @@ const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center lg:text-left lg:place-items-start">
+      <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:ms-3">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/hero-image.png"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={400}
+              height={400}
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+        <div className="col-span-7 place-self-center text-center lg:text-left lg:place-items-start lg:ms-6">
           <h1 className=" text-3xl font-extrabold text-white mb-6">
             <span className="text-transparent lg:text-5xl text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               I&apos;m Racha OuldBabaali,
@@ -54,17 +65,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/hero-image.png"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={400}
-              height={400}
-              alt="Hero Image"
-            />
-          </div>
-        </div>
+        
       </div>
     </section>
   );

@@ -520,7 +520,7 @@ const AboutSection = () => {
         </div>
       </section>
       <section>
-        <div className="md:flex md:flex-col items-center md:items-start py-8 px-2 sm:pt-20 sm:pb-6 xl:px-16">
+        <div className="md:flex md:flex-col items-center py-8 px-2 sm:pt-20 sm:pb-6 xl:px-16 mb-10">
           <div className="flex flex-row mt-8 font-extrabold md:text-3xl">
             <TabButton
               selectTab={() => handleTabChange("skills")}

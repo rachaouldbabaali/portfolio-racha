@@ -32,12 +32,12 @@ const HeroSection = () => {
                   "Full Stack Developer",
                   1000,
                   "Frontend Developer",
-                  1000,
+                  3000,
                   "Backend Developer",
                   1000,
                 ]}
                 wrapper="span"
-                // repeat={Infinity}
+                repeat={Infinity}
                 spead={100}
               />
             </span>

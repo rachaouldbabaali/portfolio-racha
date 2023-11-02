@@ -21,7 +21,7 @@ const navLinks = [
   },
   {
     title: "Contact",
-    path: "/#contact",
+    path: "#contact",
   },
 ];
 
@@ -42,10 +42,7 @@ const Navbar = () => {
             {navLinks.map((link) => {
               return (
                 <li key={link.title}>
-                  <NavLink
-                    title={link.title}
-                    href={link.path}
-                  />
+                  <NavLink href={link.path} title={link.title} />
                 </li>
               );
             })}

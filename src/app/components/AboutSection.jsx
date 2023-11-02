@@ -482,8 +482,8 @@ const AboutSection = () => {
   return (
     <>
       <section className="text-white mt-20" id="about">
-        <div className="md:flex md:flex-row gap-8 items-center py-3 px-3 xl:gap-16 sm:py-3 xl:px-3 inline-block w-full sm:w-fit my-3 sm:m-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-lg">
-          <div className="flex flex-col md:flex-row justify-between items-center w-full bg-[#121212] rounded-lg px-7 py-7">
+        <div className="md:flex md:flex-row gap-8 items-center p-1 xl:gap-16 sm:py-3 xl:px-3 inline-block w-full sm:w-fit my-3 sm:m-1 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-lg">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full bg-[#121212] rounded-lg p-10">
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
               <h2 className="text-4xl font-bold  mb-4 text-transparent lg:text-5xl bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
                 About Me

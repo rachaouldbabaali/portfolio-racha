@@ -50,14 +50,14 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="#contact"
+              href={"#contact"}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
             <Link
               href="https://docs.google.com/document/d/1mzb1FoL5wEXlQbIPiqbku_vLNVnZF9gw48dVNhwXLjQ/edit?usp=sharing"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full my-3 sm:m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white"
+              className=" inline-block p-1 w-full sm:w-fit rounded-full my-3 sm:m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV

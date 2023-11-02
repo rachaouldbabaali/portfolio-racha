@@ -1,3 +1,13 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    "routes": [
+        {
+            "name": "default",
+            "pattern": "{controller}/{action}/{id}",
+            "defaults": {
+                "controller": "Home",
+                "action": "Index",
+                "id": ""
+            }
+        }
+    ]
 }

@@ -13,11 +13,11 @@ const navLinks = [
   },
   {
     title: "About",
-    path: "/#about",
+    path: "#about",
   },
   {
     title: "Projects",
-    path: "/#projects",
+    path: "#projects",
   },
   {
     title: "Contact",
@@ -39,13 +39,11 @@ const Navbar = () => {
         </Link>
         <div className=" w-auto mx-5 block default">
           <ul className="font-medium flex p-4 md:p-0 rounded-lg flex-row md:space-x-8 mt-0">
-            {navLinks.map((link) => {
-              return (
-                <li key={link.title}>
-                  <NavLink href={link.path} title={link.title} />
-                </li>
-              );
-            })}
+            {navLinks.map(({ title, path }) => (
+              <li key={title}>
+                <NavLink title={title} href={path} />
+              </li>
+            ))}
           </ul>
         </div>
         <div className="block md:hidden">

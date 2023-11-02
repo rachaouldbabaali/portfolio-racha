@@ -1,13 +1,13 @@
 {
     "routes": [
         {
-            "name": "default",
-            "pattern": "{controller}/{action}/{id}",
-            "defaults": {
-                "controller": "Home",
-                "action": "Index",
-                "id": ""
-            }
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/test",
+            "dest": "/"
         }
+        
     ]
 }

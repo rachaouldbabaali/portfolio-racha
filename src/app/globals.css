@@ -8,6 +8,11 @@
   }
 }
 
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
 .hideme {
   display: none;
 }

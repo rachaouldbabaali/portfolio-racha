@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef  } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -27,9 +27,12 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const aboutSectionRef = useRef(null);
+  const projectsSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
 
-  const smoothScrollToTarget = (targetId) => {
-    const targetElement = document.getElementById(targetId);
+  const smoothScrollToTarget = (targetRef) => {
+    const targetElement = targetRef.current;
     if (targetElement) {
       targetElement.scrollIntoView({
         behavior: "smooth",
@@ -38,11 +41,15 @@ const Navbar = () => {
   };
 
   const handleLinkClick = (path) => {
-    if (path.startsWith("#")) {
-      const targetId = path.slice(1); // Remove the '#' symbol
-      smoothScrollToTarget(targetId);
+    if (path === "#about") {
+      smoothScrollToTarget(aboutSectionRef);
+    } else if (path === "#projects") {
+      smoothScrollToTarget(projectsSectionRef);
+    } else if (path === "#contact") {
+      smoothScrollToTarget(contactSectionRef);
     }
   };
+
 
   // return (
   //   <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">

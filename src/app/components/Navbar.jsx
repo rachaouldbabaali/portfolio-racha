@@ -28,6 +28,13 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const scrollToHash = (hash) => {
+    const el = document.querySelector(hash);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
       <div className="flex flex-wrap items-center justify-between mx-auto p-8">
@@ -41,7 +48,7 @@ const Navbar = () => {
           <ul className="font-medium flex p-4 md:p-0 rounded-lg flex-row md:space-x-8 mt-0">
             {
               navLinks.map((link, index) => (
-                <li key={index}>
+                <li key={index} onClick={() => scrollToHash(link.path)}>
                   <NavLink href={link.path} title={link.title} />
                 </li>
               ))

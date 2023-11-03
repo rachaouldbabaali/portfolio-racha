@@ -9,7 +9,7 @@ import styles from "../globals.css"
 const navLinks = [
   {
     title: "Home",
-    path: "/",
+    path: "#home",
   },
   {
     title: "About",

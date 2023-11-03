@@ -37,6 +37,10 @@ const EmailSection = () => {
     }
   };
 
+  const handleEmailClick = () => {
+    window.open("mailto: rachaould@gmail.com");
+  }
+
   return (
     <section
       id="contact"
@@ -54,12 +58,25 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/rachaouldbabaali/">
-            <Image src="/images/github-icon.svg" alt="Github Icon" width={35} height={35} />
+          <Link href="https://github.com/rachaouldbabaali/" target="_blank">
+            <Image
+              src="/images/github-icon.svg"
+              alt="Github Icon"
+              width={35}
+              height={35}
+            />
           </Link>
-          <Link href="https://www.linkedin.com/in/rachaouldbabaali/">
-            <Image src="/images/linkedin-icon.svg" alt="Linkedin Icon" width={35} height={35} />
+          <Link href="https://www.linkedin.com/in/rachaouldbabaali/" target="_blank">
+            <Image
+              src="/images/linkedin-icon.svg"
+              alt="Linkedin Icon"
+              width={35}
+              height={35}
+            />
           </Link>
+          <button onClick={handleEmailClick}>
+            <i className="fas fa-envelope text-2xl text-white hover:text-slate-200"></i>
+          </button>
         </div>
       </div>
       <div>

@@ -177,7 +177,7 @@ const TAB_DATA = [
         </li>
         <li className="flex items-center m-2">
           <i
-            class="fa-solid fa-people-group fa-xl p-2"
+            className="fa-solid fa-people-group fa-xl p-2"
             style={{ color: "#d2e0f9" }}
           ></i>
           Agile
@@ -224,6 +224,7 @@ const TAB_DATA = [
               <a
                 href="https://www.microverse.org/"
                 className="text-blue-500 hover:text-blue-800"
+                target="_blank"
               >
                 MICROVERSE | March 2023 / Sept 2023.
               </a>
@@ -259,6 +260,7 @@ const TAB_DATA = [
               <a
                 href="https://www.microverse.org/"
                 className="text-blue-500 hover:text-blue-800"
+                target="_blank"
               >
                 SUPERIOR SCHOOL OF APPLIED SCIENCES IN TLEMCEN | Sept 2015 /
                 Sept 2020
@@ -288,6 +290,7 @@ const TAB_DATA = [
               <a
                 href="https://www.microverse.org/"
                 className="text-blue-500 hover:text-blue-800"
+                target="_blank"
               >
                 SUPERIOR SCHOOL OF APPLIED SCIENCES IN TLEMCEN | Sept 2018 /
                 Sept 2020
@@ -312,6 +315,7 @@ const TAB_DATA = [
           <a
             href="https://www.credential.net/10b84d8e-4c44-4f66-b900-59830cc3c607"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Full Stack Web Development {"  "}</b>
@@ -325,6 +329,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/in/rachaouldbabaali/details/certifications/1635540392104/single-media-viewer/?profileId=ACoAABA6oV0BrPJgRNp4UfkhcUFD9OCDyx2CKfc"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Elite Master of CSS {"  "}</b>
@@ -337,6 +342,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/in/rachaouldbabaali/details/certifications/1635540392123/single-media-viewer/?profileId=ACoAABA6oV0BrPJgRNp4UfkhcUFD9OCDyx2CKfc"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Elite Master Of Git {"  "}</b>
@@ -349,6 +355,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/in/rachaouldbabaali/details/certifications/1635540685240/single-media-viewer/?profileId=ACoAABA6oV0BrPJgRNp4UfkhcUFD9OCDyx2CKfc"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Elite Master of HTML5 {"  "}</b>
@@ -361,6 +368,7 @@ const TAB_DATA = [
           <a
             href="https://www.credly.com/badges/60b414a2-2121-4116-9804-e8f530f6c319/public_url"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Enterprise Design Thinking Practitioner {"  "}</b>
@@ -373,6 +381,7 @@ const TAB_DATA = [
           <a
             href="https://www.credential.net/1ca9e184-8328-4c4f-aadb-235adf630776"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Ruby On Rails {"  "}</b>
@@ -385,6 +394,7 @@ const TAB_DATA = [
           <a
             href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-RachaOuld-995063.pdf"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>SCRUM Fondamentals {"  "}</b>
@@ -397,6 +407,7 @@ const TAB_DATA = [
           <a
             href="https://www.credential.net/67164f5c-71c0-48fe-8ef1-0d21aaa3b0a5"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Ruby {"  "}</b>
@@ -409,6 +420,7 @@ const TAB_DATA = [
           <a
             href="https://www.credential.net/b920a161-3b15-4e67-ac91-47d81e4dac25"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>React / Redux {"  "}</b>
@@ -417,10 +429,11 @@ const TAB_DATA = [
           </a>
         </li>
         <li className="mb-2 flex items-center">
-          <i class="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
+          <i className="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
           <a
             href="https://www.credential.net/c35af549-dc3f-4d4b-a9ef-493c0e233973"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>JavaScript {"  "}</b>
@@ -429,10 +442,11 @@ const TAB_DATA = [
           </a>
         </li>
         <li className="mb-2 flex items-center">
-          <i class="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
+          <i className="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
           <a
             href="https://www.udemy.com/certificate/UC-4274cd01-09d5-429e-8444-318ce11eedde/"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Modern JavaScript for ReactJs-ES6{"  "}</b>
@@ -441,10 +455,11 @@ const TAB_DATA = [
           </a>
         </li>
         <li className="mb-2 flex items-center">
-          <i class="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
+          <i className="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
           <a
             href="https://www.credential.net/22713af6-eeb4-414e-af79-fdf25ac6cfe2"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>HTML / CSS {"  "}</b>
@@ -453,10 +468,11 @@ const TAB_DATA = [
           </a>
         </li>
         <li className="mb-8 flex items-center">
-          <i class="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
+          <i className="fa-solid fa-graduation-cap bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-600 mx-3 "></i>
           <a
             href="https://www.credential.net/22713af6-eeb4-414e-af79-fdf25ac6cfe2"
             className="text-white hover:text-purple-300"
+            target="_blank"
           >
             <span className="pr-3">
               <b>Responsive Web Design with Bootstrap {"  "}</b>

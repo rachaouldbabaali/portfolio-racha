@@ -5,10 +5,14 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  const handleEmailClick = () => {
+    window.open("mailto: rachaould@gmail.com");
+  }
+  
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-      <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:ms-3">
+        <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:ms-3">
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/hero-image.png"
@@ -48,7 +52,7 @@ const HeroSection = () => {
             you like what you see and have a project you need coded, don&apos;t
             hestiate to contact me.
           </p>
-          <div>
+          <div className="flex flex-col sm:flex-row gap-2 items-center">
             <Link
               href={"#contact"}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
@@ -63,9 +67,29 @@ const HeroSection = () => {
                 Download CV
               </span>
             </Link>
+            <div className="socials flex flex-row gap-2 px-3 items-center justify-center">
+              <Link href="https://github.com/rachaouldbabaali/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/github-icon.svg"
+                  alt="Github Icon"
+                  width={35}
+                  height={35}
+                />
+              </Link>
+              <Link href="https://www.linkedin.com/in/rachaouldbabaali/" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/linkedin-icon.svg"
+                  alt="Linkedin Icon"
+                  width={35}
+                  height={35}
+                />
+              </Link>
+              <button onClick={handleEmailClick}>
+                <i className="fas fa-envelope text-3xl px-2 text-white hover:text-slate-200 "></i>
+              </button>
+            </div>
           </div>
         </div>
-        
       </div>
     </section>
   );

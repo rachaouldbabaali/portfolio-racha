@@ -8,6 +8,10 @@ import styles from "../globals.css"
 
 const navLinks = [
   {
+    title: "Home",
+    path: "/",
+  },
+  {
     title: "About",
     path: "#about",
   },

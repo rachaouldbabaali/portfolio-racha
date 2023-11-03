@@ -13,15 +13,15 @@ const navLinks = [
   },
   {
     title: "About",
-    path: "#about",
+    path: "about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    path: "projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "contact",
   },
 ];
 
@@ -42,7 +42,7 @@ const Navbar = () => {
             {
               navLinks.map((link, index) => (
                 <li key={index}>
-                  <NavLink href={link.path} title={link.title} />
+                  <NavLink href={`#${link.path}`} title={link.title} />
                 </li>
               ))
             }

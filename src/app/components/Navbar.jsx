@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef  } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -27,6 +27,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   const scrollToHash = (hash) => {
     const el = document.querySelector(hash);
@@ -34,9 +35,22 @@ const Navbar = () => {
       el.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
+  const handleDocumentClick = (event) => {
+    if ( navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setNavbarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleDocumentClick);
+    return () => {
+      document.removeEventListener("mousedown", handleDocumentClick);
+    };
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90" ref={navbarRef}>
       <div className="flex flex-wrap items-center justify-between mx-auto p-8">
         <Link
           href="/"
@@ -79,8 +93,6 @@ const Navbar = () => {
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
-  
-
 };
 
 export default Navbar;

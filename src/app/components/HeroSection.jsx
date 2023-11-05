@@ -8,7 +8,12 @@ const HeroSection = () => {
   const handleEmailClick = () => {
     window.open("mailto: rachaould@gmail.com");
   }
-  
+  const scrollToHash = (hash) => {
+    const el = document.querySelector(hash);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
@@ -53,15 +58,17 @@ const HeroSection = () => {
             hestiate to contact me.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 items-center">
-            <Link
-              href={"#contact"}
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+            <a
+              className="cursor-pointer px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              onClick={ scrollToHash.bind(this, "#contact") }
+              
             >
               Hire Me
-            </Link>
+            </a>
             <Link
               href="https://docs.google.com/document/d/1mzb1FoL5wEXlQbIPiqbku_vLNVnZF9gw48dVNhwXLjQ/edit?usp=sharing"
               className=" inline-block p-1 w-full sm:w-fit rounded-full my-3 sm:m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white"
+              target="_blank"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV

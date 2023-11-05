@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 const NavLink = ({ href, title }) => {
   return (

@@ -48,7 +48,7 @@ const Navbar = () => {
           <ul className="font-medium flex p-4 md:p-0 rounded-lg flex-row md:space-x-8 mt-0">
             {
               navLinks.map((link, index) => (
-                <li key={index} onClick={() => scrollToHash(link.path)} className="cursor-pointerblock py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white" >
+                <li key={index} onClick={() => scrollToHash(link.path)} className="cursor-pointer block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white" >
                   {link.title}
                 </li>
               ))

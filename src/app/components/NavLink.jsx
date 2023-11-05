@@ -1,4 +1,4 @@
-import { Link } from "react-scroll/modules";
+import Link from "next/Link";
 
 const NavLink = ({ href, title }) => {
   return (
@@ -9,6 +9,7 @@ const NavLink = ({ href, title }) => {
       smooth={true}
       duration={500}
       spy={true}
+      offset={-70}
       className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
     >
       {title}

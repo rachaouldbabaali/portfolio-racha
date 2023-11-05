@@ -16,3 +16,8 @@
 .hideme {
   display: none;
 }
+
+html {
+  scroll-behavior: smooth;
+  background-color: #121212;
+}

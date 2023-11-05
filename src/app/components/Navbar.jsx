@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef  } from "react";
-import Link from "next/link";
+import Link from "react-scroll/modules";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
@@ -79,7 +79,6 @@ const Navbar = () => {
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
-
   
 
 };

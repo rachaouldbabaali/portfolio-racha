@@ -58,7 +58,7 @@ const projectsData = [
   {
     id: 6,
     title: "Bookstore CMS",
-    description: "BookStore This project that we build is based on a website allowing users to add/remove books from a list in real time.",
+    description: "BookStore This project that we build is based on a website allowing users to add/remove books from a list in real time. built using React, Redux and CSS.",
     image: "/images/projects/6.jpeg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/rachaouldbabaali/bookstore",
@@ -68,7 +68,7 @@ const projectsData = [
     id: 7,
     title: "Space Travelers' Hub",
     description:
-      "space travelers hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+      "space travelers hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The application is built using JavaScript, Rest API, HTML, and CSS.",
     image: "/images/projects/7.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/rachaouldbabaali/React-Redux-GP",
@@ -78,7 +78,7 @@ const projectsData = [
     id: 8,
     title: "RAKI Book Store",
     description:
-      "Rakibook store is an online bookstore that offers a wide variety of books across multiple genres. The store provides a convenient and user-friendly platform for customers to browse and purchase books from the comfort of their homes.",
+      "Rakibook store is an online bookstore that offers a wide variety of books across multiple genres. The store provides a convenient and user-friendly platform for customers to browse and purchase books from the comfort of their homes. The application is built using JavaScript, HTML, and CSS.",
     image: "/images/projects/8.jpeg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/rachaouldbabaali/JavaScript-capstone-",
@@ -88,7 +88,7 @@ const projectsData = [
     id: 9,
     title: "SmartEd Online: Virtual Classroom for Lifelong Learning",
     description:
-      " SmartEd Online is a leading online school that offers a wide range of courses and programs to students of all ages.",
+      " SmartEd Online is a leading online school that offers a wide range of courses and programs to students of all ages. The school provides a convenient and user-friendly platform for students to learn from the comfort of their homes. The application is built using HTML and CSS.",
     image: "/images/projects/9.jpeg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/rachaouldbabaali/capstone-1",
@@ -116,7 +116,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12 text-transparent my-3 lg:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-900">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">

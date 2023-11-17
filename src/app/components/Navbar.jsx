@@ -50,8 +50,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90" ref={navbarRef}>
-      <div className="flex flex-wrap items-center justify-between mx-auto p-8">
+    <nav className="fixed top-0 left-0 right-0 bg-[#2c2c2c] bg-opacity-80 z-40" ref={navbarRef}>
+      <div className="flex flex-wrap items-center justify-between mx-auto py-3 px-8">
         <Link
           href="/"
           className="text-2xl md:text-3xl text-white font-semibold"

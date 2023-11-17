@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   const handleEmailClick = () => {
     window.open("mailto: rachaould@gmail.com");
-  }
+  };
   const scrollToHash = (hash) => {
     const el = document.querySelector(hash);
     if (el) {
@@ -52,16 +52,17 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg lg:text-xl text-primary mb-6">
-            I&apos;m a software developer! I can help you build a product,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don&apos;t
-            hestiate to contact me.
+            Welcome to my portfolio! I&apos;m a dedicated software developer with a
+            passion for building innovative products, features, and websites.
+            Take a look at my showcased work and experience. If you find my
+            projects intriguing and have a coding project in mind, feel free to
+            reach out to me. I&apos;m excited to collaborate and bring your ideas to
+            life
           </p>
           <div className="flex flex-col sm:flex-row gap-2 items-center">
             <a
               className="cursor-pointer px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
-              onClick={ scrollToHash.bind(this, "#contact") }
-              
+              onClick={scrollToHash.bind(this, "#contact")}
             >
               Hire Me
             </a>
@@ -75,7 +76,11 @@ const HeroSection = () => {
               </span>
             </Link>
             <div className="socials flex flex-row gap-2 px-3 items-center justify-center">
-              <Link href="https://github.com/rachaouldbabaali/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/rachaouldbabaali/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/images/github-icon.svg"
                   alt="Github Icon"
@@ -83,7 +88,11 @@ const HeroSection = () => {
                   height={35}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/in/rachaouldbabaali/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.linkedin.com/in/rachaouldbabaali/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/images/linkedin-icon.svg"
                   alt="Linkedin Icon"

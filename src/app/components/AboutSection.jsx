@@ -505,20 +505,28 @@ const AboutSection = () => {
                 About Me
               </h2>
               <p className="text-base lg:text-lg">
-                Hello there! I&apos;m Racha, an enthusiastic front-end web
+                Hello there! I&apos;m Racha, an enthusiastic Full-stack web
                 developer with a year of hands-on experience and a passion for
                 tackling real-world challenges.
                 <br />
                 <br />
-                Currently interning at Join Momentum, I&apos;m excited to share
-                that I&apos;ve successfully completed my transformative journey
-                at Microverse. With a solid more than a year of practical
-                experience, I thrive on conquering real-world challenges and
-                mastering diverse technologies.
+                Thriving as a full stack developer at Ouedkniss, I contribute to
+                innovative projects and collaborate with a dynamic team,
+                leveraging my prior experience as a front-end developer at Join
+                Momentum. There, I learned the importance of teamwork and
+                effective communication, solidifying my passion for web
+                development. Before, I underwent a transformative journey at
+                Microverse, where I gained a solid foundation in software
+                development, problem-solving skills, and a comprehensive
+                understanding of various technologies, preparing me for the
+                challenges and opportunities in the tech industry. Now, equipped
+                with experiences from Ouedkniss, Join Momentum, and Microverse,
+                I am poised to drive innovation and make meaningful
+                contributions in the ever-evolving field of technology.
                 <br />
                 <br />
                 If you&apos;re in search of a dedicated, hardworking, and
-                perpetually curious front-end developer to enhance your
+                perpetually curious full-stack developer to enhance your
                 projects, let&apos;s connect. I&apos;m eager to contribute my
                 skills and passion to your team!
               </p>
